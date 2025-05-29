@@ -1,0 +1,243 @@
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem 5vw;
+  text-align: center;
+  position: relative;
+  height: auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #13966a;
+  margin: 0;
+  line-height: 1.2;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header button#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #13966a;
+  transition: color 0.3s ease;
+}
+
+header button#themeToggle:hover {
+  color: #13966a;
+}
+
+
+main {
+  padding: 2rem 5vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subject {
+  background-color: white;
+  margin-bottom: 1rem;
+  /* margin-top: 2rem; */
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-right: 5px solid #13966a;
+}
+.subject21 {
+  /* background-color: white; */
+  margin-bottom: 1rem;
+  /* margin-top: 2rem; */
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-right: 10px solid #0077cc;
+  border-left: 10px solid #0077cc;
+  border-bottom: 1px solid #0077cc;
+  border-top: 1px solid #0077cc;
+}
+.subject22 {
+  /* background-color:rgb(233, 245, 246); */
+  /* margin-bottom: 1rem; */
+  /* margin-top: 2rem; */
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #0077cc;
+  border-left: 1px solid #0077cc;
+  border-bottom: 1px solid #0077cc;
+  border-top: 1px solid #0077cc;
+  /* color: #f7f9fb; */
+}
+
+#zed27 {
+  color: #13966a;
+}
+.subject h2 {
+  color: #13966a;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.subject p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.subject a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.subject21 a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.subject a:hover {
+  text-decoration: underline;
+}
+.subject21 a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: #004680;
+  color: white;
+  text-align: center;
+  padding: 1rem 5vw;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+footer {
+    background:rgb(51 65 85);
+    color: rgb(216 180 254 );
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #abb0b9;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+
+
+#m10 {
+  color: crimson;
+}
+
+#m2711{
+    padding: 20px;
+    border-top: 1px dashed #337ab7;
+    border-right: 4px solid #337ab7;
+    border-bottom: 1px dashed #337ab7;
+    border-left: 4px solid #337ab7;
+    position: relative;
+}
+footer a:hover {
+    color: aliceblue;
+    text-decoration: underline;
+}
+.m27{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .subject h2 {
+    font-size: 1.3rem;
+  }
+  .subject p, .subject a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem 3vw;
+  }
+  main {
+    padding: 1.5rem 3vw;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .subject h2 {
+    font-size: 1.1rem;
+  }
+  .subject p, .subject a {
+    font-size: 0.85rem;
+  }
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .subject {
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  color: #ddd;
+}
+body.dark-mode .subject22 {
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  color: #ddd;
+}
+
+body.dark-mode a {
+  color: #66aaff;
+}
+
+body.dark-mode a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #bbb;
+}
+
+/* #m555 {
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid #13966a;
+} */
+
+/* powered by Mohamed Mansour  */
